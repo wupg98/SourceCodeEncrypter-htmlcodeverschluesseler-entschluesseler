@@ -1,0 +1,453 @@
+<html>
+<head>
+
+
+
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+	<title>HTML verschlüsseln Source Code Quelltext Encrypter Verschlüsselung</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="css/c8.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="js/c8url.js"></script>
+	<script language="JavaScript" src="js/fade.js"></script>
+	<script language="JavaScript" src="stuff/comm.js"></script>
+	<script language="JavaScript" src="stuff/commu.js"></script> 
+	<script language="JavaScript" src="js/box.js"></script>
+<script>
+<!--
+document.write(unescape("%09%3Cscript%20language%3D%22JavaScript%22%20type%3D%22text/javascript%22%3E%0D%0A%09%3C%21--%0D%0A%09function%20check_f%28f%29%7B%0D%0A%09%09if%28%21check%28f.g_email.value%29%29%7B%0D%0A%09%09%09alert%28%22Tragen%20Sie%20bitte%20eine%20g%FCltige%20Email-Adresse%20ein%21%22%29%3B%0D%0A%09%09%09if%28document.all%20%7C%7C%20document.getElementById%29%7B%0D%0A%09%09%09%09f.g_email.style.background%20%3D%20%22%23ffd000%22%3B%0D%0A%09%09%09%7D%0D%0A%09%09%09f.g_email.focus%28%29%3B%0D%0A%09%09%09return%20%28false%29%3B%0D%0A%09%09%7D%0D%0A%09%09document.cookie%20%3D%20%22g_email%3D%22%20+%20f.g_email.value%20+%20%22%3B%20path%3D/%3B%20expires%3D%22%20+%20ged%28365%29%3B%0D%0A%09%7D%0D%0A%09//--%3E%0D%0A%09%3C/script%3E%0D%0A%09%3Cscript%3E%0D%0A%3C%21--%0D%0Afunction%20check%28e%29%20%7B%0D%0A%09ok%20%3D%20%221234567890qwertyuiop%5B%5Dasdfghjklzxcvbnm.@-_QWERTYUIOPASDFGHJKLZXCVBNM%22%3B%0D%0A%09for%28h%3D0%3B%20h%20%3C%20e.length%20%3Bh++%29%7B%0D%0A%09%09if%28ok.indexOf%28e.charAt%28h%29%29%3C0%29%7B%20%0D%0A%09%09%09return%20%28false%29%3B%0D%0A%09%09%7D%09%09%0D%0A%09%7D%20%0D%0A%09if%20%28document.images%29%20%7B%0D%0A%09%09re%20%3D%20/%28@.*@%29%7C%28%5C.%5C.%29%7C%28%5E%5C.%29%7C%28%5E@%29%7C%28@%24%29%7C%28%5C.%24%29%7C%28@%5C.%29/%3B%0D%0A%09%09re_two%20%3D%20/%5E.+%5C@%28%5C%5B%3F%29%5Ba-zA-Z0-9%5C-%5C.%5D+%5C.%28%5Ba-zA-Z%5D%7B2%2C3%7D%7C%5B0-9%5D%7B1%2C3%7D%29%28%5C%5D%3F%29%24/%3B%0D%0A%09%09if%20%28%21e.match%28re%29%20%26%26%20e.match%28re_two%29%29%20%7B%0D%0A%09%09%09return%20%28-1%29%3B%09%09%0D%0A%09%09%7D%20%0D%0A%09%7D%0D%0A%7D%0D%0A//%20--%3E%0D%0A%3C/script%3E"));
+//-->
+</script>
+</head>
+<body bgcolor=#003366 leftmargin=0 topmargin=0 marginheight="0" marginwidth="0" bgproperties="fixed">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "tools/htmlencrypt.html";
+
+var firstYear = 1996;
+var displayDay = "18";
+var displayMonth = "Okt";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="tools/htmlencrypt.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20151018115559" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="tools/htmlencrypt.html" title="9 Jul 2015">JUL</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 11:55:59 Okt 18, 2015">OKT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="tools/htmlencrypt.html" title="5 Dez 2015"><strong>DEZ</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="tools/htmlencrypt.html" title="22:57:15 Jul 9, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:55:59 Okt 18, 2015">18</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="tools/htmlencrypt.html" title="15:46:25 Dez 5, 2015"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="tools/htmlencrypt.html" title="31 Jul 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 11:55:59 Okt 18, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="tools/htmlencrypt.html" title="24 Nov 2016"><strong>2016</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="tools/htmlencrypt.html" title="See a list of every capture for this URL">87 captures</a>
+           <div class="r" title="Timespan for captures of this URL">29 Sep 03 - 24 Nov 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000001000_2004:-1:000001010101_2005:-1:000100000001_2006:-1:111111001100_2007:-1:331101120000_2008:-1:111101000011_2009:-1:111100000000_2010:-1:010000001110_2011:-1:000001111202_2012:-1:011131010111_2013:-1:201120121111_2014:-1:110100200000_2015:9:002100100101_2016:-1:100000000010_2017:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="Layer1" style="position:absolute; left:74px; top:17px; width:713px; height:427px; z-index:1; visibility: hidden;">
+  <h1>HTML Source Code verschlüsseln und PHP verstecken</h1>
+  <p>Schluss mit Spionage und Copy Paste Diebstahl von HTML oder PHP Quelltext. Schützen Sie Ihre Scripte vor Dieben.    
+    <a href=tools/tools.html>kostenlos HTML verschlüsseln</a> - verstecken von Quellcode, Quelltext und Source. online Javascript verschlüsseln und Website Verschlüsselung   
+	online HTML Dateien verschlüsseln - zuverlässig und kostenlos! HTML PHP Code Verschlüsselung mit dem <a href=tools/unicode.html>Source Code Encrypter!</a> 
+    codiert den Quelltext und macht ihn damit unleserlich - Ihr Source ist sicher vor neugierigen Augen geschützt. Online Version steht kostenlos zur Verfügung.</p>
+</div>
+<table width=100% height=100% cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td valign=top>
+<!-- table -->
+<table id=tresor style="FILTER: alpha(opacity=100)" cellSpacing=0 cellPadding=0 width="95%" align=center border=0>
+	<tbody>
+		<tr>
+			<td class="cage-01_tl" width=10><img height=12 src="img/t.gif" width=10 border=0></td>
+			<td class="cage-01_t" width="100%"><img src="img/t.gif" width="100%" height="12"></td>
+			<td class="cage-01_tr" width=12><img height=12 src="img/t.gif" width=12></td>
+		</tr>
+		<tr>
+			<td class="cage-01_l" height=100% rowSpan=2>&nbsp;</td>
+			<td class="cage-01" align=left valign=top>&nbsp;</td><script type="text/javascript" language="javascript" src="_e.js"></script>
+			<td class="cage-01_r" height=100% rowSpan=2>&nbsp;</td>
+		</tr>
+		<tr>
+			<td  class="cage-01" valign="top">
+<!-- table end -->
+<table class=subnav width=100% border=0 cellpadding=2 cellspacing=1>
+	<tr><td class=titel width=100% height=24 valign=middle>&nbsp;&nbsp;<a href=tools/tools.html><font class=DDDDDD>Tools</font></a>&nbsp;&nbsp;::&nbsp;&nbsp;<a href=cgi/spam/spam.pl><font class=6699FF>Stop Spam</font></a></small></td><td class=titel align=center><a href="/web/20151018115559/http://www.communic8.ch/cgi/c8prima/print.cgi" target="_blank" onfocus="this.blur();"><img src=img/c8print.gif border=0 alt="Diese Seite ausdrucken"></a></td><td class=titel align=center><a href="/web/20151018115559/http://www.communic8.ch/cgi/c8prima/emailit.cgi" target="_blank" onfocus="this.blur();"><img src=img/c8send.gif border=0 alt="Diese Seite per Email versenden"></a></td></tr>
+	<tr><td colspan=3>&nbsp;&nbsp;<small>Stop Spam <a href=cgi/spam/spam.pl>Generator 1 (JavaScript)</a>&nbsp;-&nbsp;<a href=tools/unicode.html>Generator 2 (Unicode)</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href=tools/htmlencrypt.html><font class=6699FF>HTML verschl&uuml;sseln</font></a></small></td></tr>
+</table><p>
+<!--start c8prima-->
+<h3>Professionell HTML verschlüsseln mit Codelock</h3>
+<center><table border="0" cellspacing="1" cellpadding="4" width="80%"><tr><td>
+Wenn Sie Ihren Quelltext - egal ob HTML oder PHP - professionell verschlüsseln möchten, so gibt es dafür Codelock. 
+Holen Sie sich eine <a href="cgi/axs/ax.pl?http://www.shareit.com/product.html?cart=1&amp;productid=218556&amp;backlink=http%3A%2F%2Fwww.communic8.ch%2F&amp;noquickbuy=1&amp;affiliateid=200007434" rel="nofollow">kostenlose - Demoversion von Codelock</a>
+- oder testen Sie das geniale Verschlüsselungs-Tool online: 
+<br><br><br>
+<div align=center><input type="button" value="Professionelle Verschlüsselung mit Codelock online testen!" onClick="javascript:showMe();nereidFade('tresor',50,10,7)" class="but" onmouseover="this.className='buto'" onmouseout="this.className='but'"></div>
+<br><br>
+<h4>HTML Source Code Encrypter</h4>
+Mit diesem Tool kann das unerwünschte Kopieren des Quelltextes erschwert werden, indem der HTML-Quelltext mittels JavaScript 
+"versteckt" wird. Obwohl es bei dieser Methode für einigermassen erfahrene Programmierer kein grosses Problem ist, 
+den Code zu enttarnen, hat der unleserliche Sourcecode dennoch auf die meisten Code-Diebe eine abschreckende Wirkung. 
+<br><br>
+<center>
+<table class=003366 width=80% border="0" cellpadding="10" cellspacing="4">
+	<tr>
+		<td class=top_bottom_left_right>
+        <table summary="x1" border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class=small width="100%" align=center>
+                    <form action="index.html" name="pad" align="center">
+                        <b>Kopieren Sie den HTML Source-Code in dieses Feld....</b><br><br>
+                         <textarea rows="11" name="text" cols="58" style="width:95%">
+                        </textarea><br><br>
+                         <div align=center><input type="button" class="but" onmouseover="this.className='buto'" onmouseout="this.className='but'" value="Verschl&uuml;sseln" name="compileIt" onclick="generate()" onmouseover="LightOn(this)" onmouseout="LightOut(this)"> <input type="button" class="but" onmouseover="this.className='buto'" onmouseout="this.className='but'" value="Ausw&auml;hlen" name="select" onclick="selectCode()" onmouseover="LightOn(this)" onmouseout="LightOut(this)"> <input type="button" value="Vorschau" class="but" onmouseover="this.className='buto'" onmouseout="this.className='but'" name="view" onclick="preview()" onmouseover="LightOn(this)" onmouseout="LightOut(this)"> <input type="button" class="but" onmouseover="this.className='buto'" onmouseout="this.className='but'" value="Source" name="retur" onclick="uncompile()" onmouseover="LightOn(this)" onmouseout="LightOut(this)"> <input type="reset" class="but" onmouseover="this.className='buto'" onmouseout="this.className='but'" value="L&ouml;schen" name="clear" onmouseover="LightOn(this)" onmouseout="LightOut(this)"></div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+		</td>
+	</tr>
+</table>
+</center>
+<br><br><br>
+</td></tr></table></center>
+<!-- table -->
+			</td>
+		</tr>
+		<tr>
+			<td class="cage-01_bl" width=10><img height=11 src="img/t.gif" width=10></td>
+			<td class="cage-01_b" width="100%"><img height=11 src="img/t.gif" width="100%"></td>
+			<td class="cage-01_br" width=12><img height=11 src="/img/t.gif" width=12></td>
+		</tr>
+	</tbody>
+</table>
+<!--end c8prima-->
+		</td>
+	</tr>
+	<tr>
+		<td valign=bottom><br>
+<script language="JavaScript1.2">
+<!--
+var bookmarkurl="http://www.communic8.ch/fs/4230.html";
+var bookmarktitle="www.communic8.ch - web realities... - HTML Encrypter";
+//-->
+</script>
+<table width="100%" height=37 cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td width=100>&nbsp;</td>
+		<td width=134><img src="includes/bottom_left.gif" width=145 height=37></td>
+		<td width=* background="includes/bgbottom.gif" align=right><img src="img/t.gif" height=15 width=1><br><nobr><small><a href='javascript:wes(url1)' title="www.communic8.ch - Weiterempfehlen" onmouseover="status='Website weiterempfehlen'; return true" onmouseout="status=''; return true"><font style="text-decoration:none;color:#dddddd">Weitersagen</font></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='d/sitemap.html' title="Sitemap" onmouseover="status='Zur Website-Uebersicht'; return true" onmouseout="status=''; return true"><font style="text-decoration:none;color:#dddddd">Sitemap</font></a>&nbsp;&nbsp;|&nbsp;&nbsp;copyright &copy; 2007 <a href="http://www.communic8.ch/" target="_top" title="Einstiegsseite von communic8"><font style="text-decoration:none;color:#dddddd">communic8</font></a>&nbsp;&nbsp;</small></nobr></td>
+		<td width=42 background="includes/bgbottom.gif" valign=middle align=center><img src="img/t.gif" height=18 width=1><br><nobr><a href="#top" target=detail rel="nofollow"><img src="img/top2.gif" alt="nach oben" border=0></a>&nbsp;&nbsp;</nobr></td>
+	</tr>
+</table>
+<script>
+<!--
+if(nn4){
+	for(l = 0; l < nnnames.length; l++){
+		document[nnnames[l]].visibility = "show";
+	}
+}
+if(document.all){
+	if(document.all.l1){
+		onload = curtain;
+	}
+}
+if(document.getElementById){
+	if(document.getElementById("l2")){
+		if(nn6){
+			onload = curtain;
+			document.getElementById("l2").style.visibility = "visible";
+		}
+	}
+}
+// -->
+</script>
+
+
+
+ 
+
+
+		</td>
+	</tr>
+</table>
+<script language="JavaScript">
+<!-- 
+	if(parent.frames.length==0){
+	if(document.referrer.indexOf("www.communic8.ch/")==-1)
+{
+	
+	}
+	}
+// -->
+</script>
+<div id="theLayer" style="position:absolute;width:570px;height:250px;left:153;top:126;visibility:hidden;filter:shadow(strength=5,direction=135)">
+<table border="0" width="330" bgcolor="#6699ff" cellspacing="0" cellpadding="1">
+<tr>
+<td width="100%">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="36">
+  <tr>
+  <td id="titleBar" style="cursor:move" width="100%">
+  <ilayer width="100%" onSelectStart="return false">
+  <layer width="100%" onMouseover="isHot=true;if (isN4) ddN4(theLayer)" onMouseout="isHot=false">
+  <font face="verdana,Arial" color="#003366">&nbsp;<b>Zugangscode eingeben...</b></font>
+  </layer>
+  </ilayer>
+  </td>
+  <td style="cursor:hand" valign="middle"><a href="#" onClick="hideMe();nereidFade('tresor',100,10,7);return false"><img src=img/close.gif border=0 alt="Schliessen"></a></td>
+  </tr>
+  <tr>
+  <td width="100%" bgcolor="#003366" style="padding:8px" colspan="2"><small>
+<table class=003366 border="0" cellpadding="0" cellspacing="4"><tr><td>
+<SCRIPT language="JavaScript">
+<!--
+    var usermulcode=1512
+    var code=0
+    var mul=1
+    var digit=0
+    var fails=0
+
+    function Enter_code(number)   {
+      code=code*10+number
+      mul=mul*number
+      document.codepad.thecode.value=code
+      digit++
+
+      if (digit==5)     {
+        if (mul==1512)    {
+          location=""+code+".html";
+        }else{
+          fails++
+          code=0
+          mul=1
+          digit=0
+          if (fails<2)  {
+            if (fails==1) {
+	document.codepad.thecode.value="Falsch!"
+	}
+        location="htmlencrypt.html"
+	alert('Der Code war falsch - versuchen sie es erneut. ');
+        document.codepad.thecode.value="Falsch !"
+          }
+        }
+      }
+    }
+    function keycodepad(mulcode)
+    {
+      usermulcode=mulcode
+      document.write('<br><form name="codepad">');
+      document.write('<input type="button" class="but" value=" 1 " onClick="Enter_code(1)">');
+      document.write('<input type="button" class="but" value=" 2 " onClick="Enter_code(2)">');
+      document.write('<input type="button" class="but" value=" 3 " onClick="Enter_code(3)"><br>');
+      document.write('<input type="button" class="but" value=" 4 " onClick="Enter_code(4)">');
+      document.write('<input type="button" class="but" value=" 5 " onClick="Enter_code(5)">');
+      document.write('<input type="button" class="but" value=" 6 " onClick="Enter_code(6)"><br>');
+      document.write('<input type="button" class="but" value=" 7 " onClick="Enter_code(7)">');
+      document.write('<input type="button" class="but" value=" 8 " onClick="Enter_code(8)">');
+      document.write('<input type="button" class="but" value=" 9 " onClick="Enter_code(9)">');
+      document.write('<input type="hidden" name="thecode" size=8 value="">');
+      document.write('</form>');
+    }
+// -->
+</SCRIPT>
+<center>
+<table border=0 cellpadding=5 cellspacing=0>
+	<tr>
+		<td class=top_bottom_left_right bgcolor=#003366 align="center" valign="middle"><img src=img/t.gif width=100 height=1><br><script>keycodepad(1512)</script></td>
+		<td class=top_bottom_right bgcolor=#003366 align="center" valign="middle"><br><form name="c8form" action="http://www.communic8.ch/cgi/c8auto/autoresponder.cgi" method="post" onsubmit="return check_f(this)"><input type="hidden" name="action" value="1"><input type="hidden" name="select" value="autoresponder1.txt">Lassen Sie sich den Code jetzt gleich per eMail zusenden:<br><br>&nbsp;&nbsp;&nbsp;<nobr><input type="text" name="g_email" size="30">&nbsp;<input type="submit" class="but" onmouseover="this.className='buto'" onmouseout="this.className='but'" value="Code Anfordern!">&nbsp;&nbsp;&nbsp;</nobr></form></td>
+	</tr>
+</table>
+</center>
+</td></tr></table>
+</small>
+  </td>
+  </tr>
+  </table> 
+</td>
+</tr>
+</table>
+</div>
+<script>
+<!--
+document.write(unescape("%3Cscript%3E%0D%0A%3C%21--%0D%0Afunction%20ged%28noDays%29%7B%0D%0A%09today%20%3D%20new%20Date%28%29%3B%0D%0A%09expr%20%20%3D%20new%20Date%28today.getTime%28%29%20+%20noDays*24*60*60*1000%29%3B%0D%0A%09return%20%20expr.toGMTString%28%29%3B%0D%0A%7D%0D%0A%0D%0Afunction%20readCookies%28c1%2Cc2%29%7B%0D%0A%20formCOOKIES%20%3D%20new%20Array%28%29%3B%0D%0A%20formCOOKIES%20%3D%20document.cookie.split%28%27%3B%20%27%29%3B%0D%0A%20for%28aa%20%3D%200%3B%20aa%20%3C%20formCOOKIES.length%3B%20aa++%29%7B%0D%0A%20%20NmeVal%20%20%3D%20new%20Array%28%29%3B%0D%0A%20%20NmeVal%20%20%3D%20formCOOKIES%5Baa%5D.split%28%27%3D%27%29%3B%0D%0A%20%20if%28NmeVal%5B0%5D%20%3D%3D%20c1%20%7C%7C%20NmeVal%5B0%5D%20%3D%3D%20c2%29%7B%0D%0A%20%20%20document.c8form%5BNmeVal%5B0%5D%5D.value%20%3D%20NmeVal%5B1%5D%3B%0D%0A%20%20%7D%0D%0A%20%7D%0D%0A%7D%0D%0A%0D%0AreadCookies%28%22g_email%22%29%3B%0D%0A//--%3E%0D%0A%3C/script%3E"));
+//-->
+</script>
+<noscript>
+<meta http-equiv="refresh" content="1;url=htmlencrypt.html">
+</noscript>
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 11:55:59 Okt 18, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 4:54:20 Mär 6, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

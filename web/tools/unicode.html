@@ -1,0 +1,288 @@
+<html>
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app4.us.archive.org";archive_analytics.values.server_ms=208;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+	<title>Unicode Konverter ASCII Zeichen in Unicode umwandeln</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link href="/web/20151027063453cs_/http://www.communic8.ch/css/c8.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="/web/20151027063453js_/http://www.communic8.ch/js/fade.js"></script>
+<script>
+<!--
+document.write(unescape("%3Cscript%20language%3D%22javascript%22%20type%3D%22text/javascript%22%3E%20%0D%0A%3C%21--%20%0D%0Afunction%20decode%28%29%7B%20%0D%0A%20%20if%28document.forms%5B0%5D.hex.value%20%21%3D%20%27%27%29%7B%20%0D%0A%20%20%20%20%20%20%20%20var%20vText%20%3D%20document.forms%5B0%5D.hex.value%3B%20%0D%0A%20%20%20%20%20%20%20%20document.forms%5B0%5D.ascii.value%20%3D%20unescape%28vText%29%3B%20%0D%0A%20%20%7D%20%0D%0A%7D%20%0D%0A%0D%0Afunction%20encode%28%29%7B%20%0D%0A%20%20if%28document.forms%5B0%5D.ascii.value%20%21%3D%20%27%27%29%7B%20%0D%0A%20%20%20%20%20var%20vText%20%3D%20document.forms%5B0%5D.ascii.value%3B%20%0D%0A%20%20%20%20%20document.forms%5B0%5D.hex.value%20%3D%20convertToHex%28vText%29%3B%20%0D%0A%20%20%20%20%20%20%20%20%20var%20vEncoded%20%3D%20convertToUnicode%28vText%29%3B%20%0D%0A%20%20%20%20%20document.forms%5B0%5D.unicode.value%20%3D%20vEncoded%3B%20%0D%0A%20%20%20%20%20%20%20%20%20document.getElementById%28%22unicodeHTML%22%29.innerHTML%20%3D%20vEncoded%3B%20%0D%0A%20%20%7D%20%0D%0A%7D%20%0D%0A%0D%0Afunction%20convertToUnicode%28source%29%20%7B%20%0D%0A%20%20result%20%3D%20%27%27%3B%20%0D%0A%20%20for%20%28i%3D0%3B%20i%3Csource.length%3B%20i++%29%20%0D%0A%20%20%20%20result%20+%3D%20%27%26%23%27%20+%20source.charCodeAt%28i%29%20+%20%27%3B%27%3B%20%0D%0A%20%20return%20result%3B%20%0D%0A%7D%20%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0D%0Afunction%20convertToHex%28num%29%20%7B%20%0D%0A%20%20var%20hex%20%3D%20%27%27%3B%20%0D%0A%20%20for%20%28i%3D0%3Bi%3Cnum.length%3Bi++%29%20%0D%0A%20%20%20%20hex%20+%3D%20%22%25%22%20+%20num.charCodeAt%28i%29.toString%2816%29.toUpperCase%28%29%3B%20%0D%0A%20%20return%20hex%3B%20%0D%0A%7D%20%0D%0A//--%3E%20%0D%0A%3C/script%3E%20%0D%0A%3C/head%3E%0D%0A%3Cbody%20bgcolor%3D%23003366%20leftmargin%3D0%20topmargin%3D0%20marginheight%3D%220%22%20marginwidth%3D%220%22%20bgproperties%3D%22fixed%22%3E%0D%0A%3Ctable%20width%3D100%25%20height%3D100%25%20cellpadding%3D0%20cellspacing%3D0%20border%3D0%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20valign%3Dtop%3E%3Cform%20name%3D%22uniconfi%22%20method%3D%22post%22%20action%3D%22/tools/unicode.html%22%3E%0D%0A%3C%21--%20table%20--%3E%0D%0A%3Ctable%20cellSpacing%3D0%20cellPadding%3D0%20width%3D%2295%25%22%20align%3Dcenter%20border%3D0%3E%0D%0A%09%3Ctbody%3E%0D%0A%09%09%3Ctr%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_tl%22%20width%3D10%3E%3Cimg%20height%3D12%20src%3D%22/img/t.gif%22%20width%3D10%3E%3C/td%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_t%22%20width%3D%22100%25%22%3E%3Cimg%20src%3D%22/img/t.gif%22%20width%3D%22100%25%22%20height%3D%2212%22%3E%3C/td%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_tr%22%20width%3D12%3E%3Cimg%20height%3D12%20src%3D%22/img/t.gif%22%20width%3D12%3E%3C/td%3E%0D%0A%09%09%3C/tr%3E%0D%0A%09%09%3Ctr%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_l%22%20height%3D100%25%20rowSpan%3D2%3E%26nbsp%3B%3C/td%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01%22%20align%3Dleft%20valign%3Dtop%3E%26nbsp%3B%3C/td%3E%3Cscript%20type%3D%22text/javascript%22%20language%3D%22javascript%22%20src%3D%22_e.js%22%3E%3C/script%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_r%22%20height%3D100%25%20rowSpan%3D2%3E%26nbsp%3B%3C/td%3E%0D%0A%09%09%3C/tr%3E%0D%0A%09%09%3Ctr%3E%0D%0A%09%09%09%3Ctd%20%20class%3D%22cage-01%22%20valign%3D%22top%22%3E%0D%0A%3C%21--%20table%20end%20--%3E%0D%0A%3Ctable%20class%3Dsubnav%20width%3D100%25%20border%3D0%20cellpadding%3D2%20cellspacing%3D1%3E%0D%0A%09%3Ctr%3E%3Ctd%20class%3Dtitel%20width%3D100%25%20height%3D24%20valign%3Dmiddle%3E%26nbsp%3B%26nbsp%3B%3Ca%20href%3D/tools/tools.html%3E%3Cfont%20class%3DDDDDDD%3ETools%3C/font%3E%3C/a%3E%26nbsp%3B%26nbsp%3B%3A%3A%26nbsp%3B%26nbsp%3B%3Ca%20href%3D/cgi/spam/spam.pl%3E%3Cfont%20class%3D6699FF%3EStop%20Spam%3C/font%3E%3C/a%3E%3C/small%3E%3C/td%3E%3Ctd%20class%3Dtitel%20align%3Dcenter%3E%3Ca%20href%3D%22/cgi/c8prima/print.cgi%22%20target%3D%22_blank%22%20onfocus%3D%22this.blur%28%29%3B%22%3E%3Cimg%20src%3D/img/c8print.gif%20border%3D0%20alt%3D%22Diese%20Seite%20ausdrucken%22%3E%3C/a%3E%3C/td%3E%3Ctd%20class%3Dtitel%20align%3Dcenter%3E%3Ca%20href%3D%22/cgi/c8prima/emailit.cgi%22%20target%3D%22_blank%22%20onfocus%3D%22this.blur%28%29%3B%22%3E%3Cimg%20src%3D/img/c8send.gif%20border%3D0%20alt%3D%22Diese%20Seite%20per%20Email%20versenden%22%3E%3C/a%3E%3C/td%3E%3C/tr%3E%0D%0A%09%3Ctr%3E%3Ctd%20colspan%3D3%3E%26nbsp%3B%26nbsp%3B%3Csmall%3EStop%20Spam%20%3Ca%20href%3D/cgi/spam/spam.pl%3EGenerator%201%20%28JavaScript%29%3C/a%3E%26nbsp%3B-%26nbsp%3B%3Ca%20href%3D/tools/unicode.html%3E%3Cfont%20class%3D6699FF%3EGenerator%202%20%28Unicode%29%3C/font%3E%3C/a%3E%26nbsp%3B%26nbsp%3B%7C%26nbsp%3B%26nbsp%3B%3Ca%20href%3D/tools/htmlencrypt.html%3EHTML%20verschl%26uuml%3Bsseln%3C/a%3E%3C/small%3E%3C/td%3E%3C/tr%3E%0D%0A%3C/table%3E%3Cp%3E"));
+//-->
+</script>
+<!--start c8prima-->
+<script>
+<!--
+document.write(unescape("%3Ch3%3ETool%20um%20ASCII%20Zeichen%20in%20Unicode%20umzuwandeln%3C/h3%3E%0D%0A%3Ccenter%3E%3Ctable%20border%3D%220%22%20cellspacing%3D%221%22%20cellpadding%3D%224%22%20width%3D%2280%25%22%3E%3Ctr%3E%3Ctd%3E%0D%0AEine%20Technik%2C%20die%20die%20Spider%20bisher%20noch%20nicht%20erkennen%2C%20ist%20das%20Verschl%FCsseln%20der%20Zeichen%20durch%20die%20Verwendung%20des%20UniCodes.%0D%0ADabei%20werden%20die%20Zeichen%20einer%20eMail-Adresse%20in%20die%20des%20UniCodes%20umgewandelt.%3Cbr%3E%3Cbr%3E%0D%0A%3C/td%3E%3C/tr%3E%3C/table%3E%3C/center%3E%0D%0A%3Ccenter%3E%0D%0A%3Ctable%20class%3D003366%20width%3D80%25%20border%3D%220%22%20cellpadding%3D%2210%22%20cellspacing%3D%224%22%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dtop_bottom_left_right%3E%0D%0A%3Ctable%20summary%3D%22x1%22%20class%3D003366%20width%3D100%25%20border%3D%220%22%20cellpadding%3D%224%22%20cellspacing%3D%224%22%3E%0D%0A%09%3Ctr%3E%3Ctd%20class%3Dsmall%20colspan%3D2%3E%3Cb%3EBeispiel%3C/b%3E%3C/td%3E%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dsmall%20align%3Dright%3EAnstatt%20in%20ASCII-Zeichen%3A%3C/td%3E%3Ctd%3E%20%26lt%3Ba%20href%3D%22mailto%3Ainfo@communic8.ch%22%3EeMail%26lt%3B/a%3E%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dsmall%20valign%3Dtop%20align%3Dright%3E%3Cnobr%3Eschreiben%20wir%20diesen%20Teil%20als%20Unicode%3A%3C/nobr%3E%3C/td%3E%3Ctd%3Emailto%3Ainfo@communic8.ch%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dsmall%20valign%3Dtop%20align%3Dright%3E%3Cnobr%3Esomit%20ergibt%20sich%20folgender%20Quelltext%3A%3C/nobr%3E%3C/td%3E%3Ctd%3E%26lt%3Ba%20href%3D%22%26amp%3B%23109%3B%26amp%3B%2397%3B%26amp%3B%23105%3B%26amp%3B%23108%3B%26amp%3B%23116%3B%26amp%3B%23111%3B%26amp%3B%2358%3B%3Cbr%3E%26amp%3B%23105%3B%26amp%3B%23110%3B%26amp%3B%23102%3B%26amp%3B%23111%3B%26amp%3B%2364%3B%26amp%3B%2399%3B%26amp%3B%23111%3B%26amp%3B%23109%3B%26amp%3B%23109%3B%3Cbr%3E%26amp%3B%23117%3B%26amp%3B%23110%3B%26amp%3B%23105%3B%26amp%3B%2399%3B%26amp%3B%2356%3B%26amp%3B%2346%3B%26amp%3B%2399%3B%26amp%3B%23104%3B%22%3EeMail%26lt%3B/a%3E%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dsmall%20align%3Dright%3E%3Cnobr%3EDas%20Ergebnis%20ist%20dasselbe%3A%3C/nobr%3E%3C/td%3E%3Ctd%3E%3Ca%20href%3D%22%26%23109%3B%26%2397%3B%26%23105%3B%26%23108%3B%26%23116%3B%26%23111%3B%26%2358%3B%26%23105%3B%26%23110%3B%26%23102%3B%26%23111%3B%26%2364%3B%26%2399%3B%26%23111%3B%26%23109%3B%26%23109%3B%26%23117%3B%26%23110%3B%26%23105%3B%26%2399%3B%26%2356%3B%26%2346%3B%26%2399%3B%26%23104%3B%22%3EeMail%3C/a%3E%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%09%3Ctr%3E%3Ctd%20class%3Dsmall%20colspan%3D2%3E%3Cbr%3E%3Cbr%3E%3Cb%3EUnicode-Konverter%3C/b%3E%3C/td%3E%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dsmall%20align%3Dright%3EASCII%20Text%3A%3C/td%3E%3Ctd%3E%3Cinput%20type%3D%22text%22%20size%3D%2260%22%20name%3D%22ascii%22%20value%3D%22mailto%3Aname@domain.ch%22%3E%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dsmall%20valign%3Dtop%20align%3Dright%3EUnicode%20Wert%3A%3C/td%3E%3Ctd%3E%3Ctextarea%20rows%3D%225%22%20cols%3D%2260%22%20name%3D%22unicode%22%20size%3D40%3E%3C/textarea%3E%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%20class%3Dsmall%20align%3Dright%3EKontrolle%3A%3C/td%3E%3Ctd%3E%3Cspan%20id%3D%22unicodeHTML%22%3E%3C/span%3E%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%09%3Ctr%3E%0D%0A%09%09%3Ctd%3E%26nbsp%3B%3C/td%3E%3Ctd%3E%3Cinput%20type%3D%22button%22%20class%3D%22but%22%20onmouseover%3D%22this.className%3D%27buto%27%22%20onmouseout%3D%22this.className%3D%27but%27%22%20value%3D%22Umwandeln%22%20onClick%3D%22encode%28%29%22%3E%26nbsp%3B%26nbsp%3B%3Cinput%20type%3D%22button%22%20class%3D%22but%22%20onmouseover%3D%22this.className%3D%27buto%27%22%20onmouseout%3D%22this.className%3D%27but%27%22%20value%3D%22Unicode%20ausw%26auml%3Bhlen%22%20onClick%3D%22this.form.unicode.select%28%29%3Bthis.form.unicode.focus%28%29%22%3E%26nbsp%3B%26nbsp%3B%3Cinput%20type%3D%22reset%22%20class%3D%22but%22%20onmouseover%3D%22this.className%3D%27buto%27%22%20onmouseout%3D%22this.className%3D%27but%27%22%20value%3D%22Zur%26uuml%3Bcksetzen%22%20onclick%3D%22return%20confirm%28%27Sind%20Sie%20sicher%3F%27%29%3Bdocument.getElementById%28%27unicodeHTML%27%29.innerHTML%20%3D%20%27%27%22%3E%3Cbr%3E%3Cbr%3E%26nbsp%3B%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%3C/table%3E%0D%0A%09%09%3C/td%3E%0D%0A%09%3C/tr%3E%0D%0A%3C/table%3E%0D%0A%3C/center%3E%0D%0A%3Cbr%3E%3Cbr%3E%0D%0A%3C%21--%20table%20--%3E%0D%0A%09%09%09%3C/td%3E%0D%0A%09%09%3C/tr%3E%0D%0A%09%09%3Ctr%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_bl%22%20width%3D10%3E%3Cimg%20height%3D11%20src%3D%22/img/t.gif%22%20width%3D10%3E%3C/td%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_b%22%20width%3D%22100%25%22%3E%3Cimg%20height%3D11%20src%3D%22/img/t.gif%22%20width%3D%22100%25%22%3E%3C/td%3E%0D%0A%09%09%09%3Ctd%20class%3D%22cage-01_br%22%20width%3D12%3E%3Cimg%20height%3D11%20src%3D%22/img/t.gif%22%20width%3D12%3E%3C/td%3E%0D%0A%09%09%3C/tr%3E%0D%0A%09%3C/tbody%3E%0D%0A%3C/table%3E"));
+//-->
+</script>
+<!--end c8prima-->
+		</td>
+	</tr>
+	
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.communic8.ch/tools/unicode.html";
+
+var firstYear = 1996;
+var displayDay = "27";
+var displayMonth = "Okt";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(550, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.communic8.ch/tools/unicode.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20151027063453" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150325020916/http://communic8.ch/tools/unicode.html" title="25 Mär 2015">MÄR</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 6:34:53 Okt 27, 2015">OKT</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Nov
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150325020916/http://communic8.ch/tools/unicode.html" title="2:09:16 Mär 25, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 6:34:53 Okt 27, 2015">27</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20140701163147/http://communic8.ch/tools/unicode.html" title="1 Jul 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 6:34:53 Okt 27, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2016
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20151027063453*/http://www.communic8.ch/tools/unicode.html" title="See a list of every capture for this URL">60 captures</a>
+           <div class="r" title="Timespan for captures of this URL">9 Okt 03 - 27 Okt 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="550"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000100_2004:-1:000001010101_2005:-1:000100000002_2006:-1:120001001000_2007:-1:010101010000_2008:-1:101000010012_2009:-1:000100000000_2010:-1:020000001110_2011:-1:000001010211_2012:-1:101021111111_2013:-1:100021121200_2014:-1:000100100000_2015:9:001000000100_2016:-1:000000000000_2017:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<tr>
+		<td valign=bottom><br>
+<input type="hidden" name="hex">
+<script language="JavaScript1.2">
+<!--
+var bookmarkurl="/web/20151027063453/http://www.communic8.ch/fs/4220.html";
+var bookmarktitle="www.communic8.ch - web realities... - Stop Spam - Unicode";
+//-->
+</script></form>
+<table width="100%" height=37 cellpadding=0 cellspacing=0 border=0>
+	<tr>
+		<td width=100>&nbsp;</td>
+		<td width=134><img src="/web/20151027063453im_/http://www.communic8.ch/includes/bottom_left.gif" width=145 height=37></td>
+		<td width=* background="/web/20151027063453im_/http://www.communic8.ch/includes/bgbottom.gif" align=right><img src="/web/20151027063453im_/http://www.communic8.ch/img/t.gif" height=15 width=1><br><nobr><small><a href='javascript:wes(url1)' title="www.communic8.ch - Weiterempfehlen" onmouseover="status='Website weiterempfehlen'; return true" onmouseout="status=''; return true"><font style="text-decoration:none;color:#dddddd">Weitersagen</font></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/web/20151027063453/http://www.communic8.ch/d/sitemap.html' title="Sitemap" onmouseover="status='Zur Website-Uebersicht'; return true" onmouseout="status=''; return true"><font style="text-decoration:none;color:#dddddd">Sitemap</font></a>&nbsp;&nbsp;|&nbsp;&nbsp;copyright &copy; 2007 <a href="/web/20151027063453/http://www.communic8.ch/" target="_top" title="Einstiegsseite von communic8"><font style="text-decoration:none;color:#dddddd">communic8</font></a>&nbsp;&nbsp;</small></nobr></td>
+		<td width=42 background="/web/20151027063453im_/http://www.communic8.ch/includes/bgbottom.gif" valign=middle align=center><img src="/web/20151027063453im_/http://www.communic8.ch/img/t.gif" height=18 width=1><br><nobr><a href="#top" target=detail rel="nofollow"><img src="/web/20151027063453im_/http://www.communic8.ch/img/top2.gif" alt="nach oben" border=0></a>&nbsp;&nbsp;</nobr></td>
+	</tr>
+</table>
+<script>
+<!--
+if(nn4){
+	for(l = 0; l < nnnames.length; l++){
+		document[nnnames[l]].visibility = "show";
+	}
+}
+if(document.all){
+	if(document.all.l1){
+		onload = curtain;
+	}
+}
+if(document.getElementById){
+	if(document.getElementById("l2")){
+		if(nn6){
+			onload = curtain;
+			document.getElementById("l2").style.visibility = "visible";
+		}
+	}
+}
+// -->
+</script>
+
+
+
+ 
+
+
+		</td>
+	</tr>
+</table>
+<script language="JavaScript">
+<!-- 
+	if(parent.frames.length==0){
+	if(document.referrer.indexOf("www.communic8.ch/")==-1)
+{
+	window.location.href="/web/20151027063453/http://www.communic8.ch/fs/4220.html";
+	}
+	}
+// -->
+</script>
+<noscript>
+<meta http-equiv="refresh" content="1;url=/web/20151027063453/http://www.communic8.ch/">
+</noscript>
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 6:34:53 Okt 27, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 5:02:47 Mär 6, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
